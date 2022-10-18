@@ -1,0 +1,16 @@
+.nav{
+    &__list {
+        display:flex;
+    }
+    &__link{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 29px;
+        letter-spacing: 0px;
+        text-align: right;
+        
+    }
+
+}

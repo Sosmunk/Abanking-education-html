@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap" rel="stylesheet">
     <title>Home</title>
-</head>
+<script defer src="styles.js"></script><link href="styles.1fe5cbf870d2e1460d4a.css" rel="stylesheet"></head>
 
 <body>
     <header class="header">
@@ -32,7 +32,7 @@
         <section class="bio">
             <div class="container">
                 <div class="bio__container">
-                    <img class="bio__portrait" src="img/images/artist.png" alt="John, Creative Technologist">
+                    <img class="bio__portrait" src="assets/c22fbd76d0f766dceb8b.png" alt="John, Creative Technologist">
                     <h1 class="bio__greeting">
                         Hi, I am John, 
                         Creative Technologist
@@ -42,20 +42,22 @@
                         Velit officia consequat duis enim velit mollit.
                         Exercitation veniam consequat sunt nostrud amet.
                     </p>
-                    <button class="bio__download">Download Resume</button>
+                    <button class="bio__download">
+                        Download Resume
+                    </button>
                 </div>
             </div>
         </section>
         <section class="recent-posts">
             <div class="container">
                 <div class="recent-posts__container">
-                    <div class="recent-posts__header">
-                        <p class="recent-posts__title">Recent posts</p>
-                        <a href="#">View all</a>
-                    </div>
+                    <h2 class="recent-posts__title">Recent posts</h2>
+                    <a href="#">View all</a>
                     <!-- Придумать тег View All -->
+                    <!-- Нужно ли список ниже во wrapper оборачивать? -->
                     <ul class="recent-posts__list">
                         <li class="recent-posts__item">
+                            <article class="recent-posts__article">
                                 <a class="recent-posts__link" href="#">Making a design system from scratch</a>
                                 <p class="recent-posts__tag">Design, Pattern</p>
                                 <p class="recent-posts__content">
@@ -63,8 +65,10 @@
                                     Velit officia consequat duis enim velit mollit.
                                     Exercitation veniam consequat sunt nostrud amet.
                                 </p>
+                            </article>
                         </li>
                         <li class="recent-posts__item">
+                            <article class="recent-posts__article">
                                 <a class="recent-posts__link" href="#">Creating pixel perfect icons in Figma</a>
                                 <p class="recent-posts__tag">Figma, Icon Design</p>
                                 <p class="recent-posts__content">
@@ -72,6 +76,7 @@
                                     Velit officia consequat duis enim velit mollit.
                                     Exercitation veniam consequat sunt nostrud amet.
                                 </p>
+                            </article>
                         </li>
                     </ul>
                 </div>
@@ -85,7 +90,7 @@
                         <li class="featured-works__item">
                             <div class="featured-works__post">
                                 <a class="featured-works__link" href="#">
-                                    <img class="featured-works-image" src="img/images/designing-dashboards.jpg" alt="Dashboards application"> 
+                                    <img class="featured-works-image" src="assets/5c7d354276177a136d0b.jpg" alt="Dashboards application"> 
                                 </a>
                                 <a class="featured-works__link" href="#">Designing Dashboards</a>
                                 <time class="featured-works__date" datetime="2020">
@@ -102,7 +107,7 @@
                         <li class="featured-works__item">
                             <div class="featured-works__post">
                                 <a class="featured-works__link" href="#">
-                                    <img class="featured-works-image" src="img/images/vibrant-portraits.jpg" alt="Vibrant woman portrait"> 
+                                    <img class="featured-works-image" src="assets/6839d6e4515c2c1d57ca.jpg" alt="Vibrant woman portrait"> 
                                 </a>
                                 <a class="featured-works__link" href="#">Vibrant Portraits of 2020</a>
                                 <time class="featured-works__date" datetime="2018">
@@ -119,7 +124,7 @@
                         <li class="featured-works__item">
                             <div class="featured-works__post">
                                 <a class="featured-works__link" href="#">
-                                    <img class="featured-works-image" src="img/images/36-days.jpg" alt="Malayalam letter"> 
+                                    <img class="featured-works-image" src="assets/b8e6749438a7e7b85be8.jpg" alt="Malayalam letter"> 
                                 </a>
                                 <a class="featured-works__link" href="#">36 Days of Malayalam type</a>
                                 <time class="featured-works__date" datetime="2018">
@@ -143,16 +148,16 @@
             <div class="footer__container">
                 <ul class="social-network__list">
                     <li class="social-network__item">
-                        <a class ="social-network__link" href="#"><img class="social-network__image" src="img/ico/fb.svg"></a>
+                        <a class ="social-network__link" href="#"><img class="social-network__image" src="assets/09acd56da0adb2d6e6e3.svg"></a>
                     </li>
                     <li class="footer__item">
-                        <a class ="social-network__link" href="#"><img class="social-network__image" src="img/ico/insta.svg"></a>
+                        <a class ="social-network__link" href="#"><img class="social-network__image" src="assets/3d68c46cfdb30a63df12.svg"></a>
                     </li>
                     <li class="footer__item">
-                        <a class ="social-network__link" href="#"><img class="social-network__image" src="img/ico/twitter.svg"></a>
+                        <a class ="social-network__link" href="#"><img class="social-network__image" src="assets/a32db65d6e8196f04e39.svg"></a>
                     </li>
                     <li class="footer__item">
-                        <a class ="social-network__link" href="#"><img class="social-network__image" src="img/ico/linkedin.svg"></a>
+                        <a class ="social-network__link" href="#"><img class="social-network__image" src="assets/05ad1948f9e4becd70e3.svg"></a>
                     </li>
                 </ul>
                 <p class="footer__copyright">Copyright ©2020 All rights reserved</p>

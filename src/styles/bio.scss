@@ -1,0 +1,40 @@
+.bio {
+    &__container{
+        display: grid;
+        padding-left:148px;
+        padding-right:148px;
+    }
+    &__greeting{
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0px;
+    text-align: left;
+    }
+    &__description{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    }
+    &__download{
+        display:inline;
+        background: #FF6464;
+        width: 208px;
+        height: 47px;
+        border-radius: 2px;
+        border:none;
+        color: white;
+        padding-left: 20px;
+        padding-right:21px;
+        padding-top:9px;
+        padding-bottom: 17px;
+        text-align: center;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 29px;
+    }
+
+}
