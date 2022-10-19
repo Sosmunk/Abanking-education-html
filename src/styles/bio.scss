@@ -1,25 +1,35 @@
 .bio {
     &__container{
-        display: grid;
-        padding-left:148px;
-        padding-right:148px;
+        display:flex;
+        margin-left: 148px;
+        margin-right:148px;
+        justify-content: space-between;
+        margin-top:140px;
+    }
+    &__portrait{
+        vertical-align: top;
     }
     &__greeting{
     font-size: 44px;
     font-weight: 700;
     line-height: 60px;
-    letter-spacing: 0px;
     text-align: left;
+    width: 587px;
+    height: 105px;
+    margin-bottom:40px;
     }
     &__description{
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    letter-spacing: 0px;
     text-align: left;
+    width: 497px;
+    height: 66px;
+    margin-bottom: 38px;
     }
     &__download{
-        display:inline;
+        cursor:pointer;
+        white-space:nowrap;
         background: #FF6464;
         width: 208px;
         height: 47px;
@@ -31,10 +41,10 @@
         padding-top:9px;
         padding-bottom: 17px;
         text-align: center;
-        font-style: normal;
         font-weight: 500;
         font-size: 20px;
         line-height: 29px;
+        margin-bottom:71px;
     }
 
 }

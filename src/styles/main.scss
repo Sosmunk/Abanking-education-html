@@ -1,18 +1,43 @@
 @use './nav.scss';
 @use './bio.scss';
 @use './recent-posts.scss';
+@use './featured-works.scss';
+@use './footer.scss';
+@use './header.scss';
 * {
     box-sizing: border-box;
 }
 body {
     font-family: 'Heebo', sans-serif;
     overflow-x: hidden;
-    color: #21243D
+    color: #21243D;
+    margin:0;
 }
+
 .container {
     width: 1152px;
     margin: 0 auto;
   }
+
 ul{
     list-style: none;
+    padding: 0;
+}
+
+li{
+    list-style:none;
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
 }

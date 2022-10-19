@@ -1,7 +1,10 @@
 .nav{
     &__list {
         display:flex;
+        justify-content: right;
+        gap: 33px;
     }
+    
     &__link{
         text-decoration: none;
         color: black;
@@ -12,5 +15,4 @@
         text-align: right;
         
     }
-
 }

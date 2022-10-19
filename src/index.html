@@ -12,37 +12,44 @@
 
 <body>
     <header class="header">
-        <div class="header__container">
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">Works</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">Blog</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </nav>
+        <div class ="container">
+            <div class="header__container">
+                <nav class="header__nav nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Works</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Blog</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
         <section class="bio">
             <div class="container">
                 <div class="bio__container">
-                    <img class="bio__portrait" src="img/images/artist.png" alt="John, Creative Technologist">
-                    <h1 class="bio__greeting">
-                        Hi, I am John, 
-                        Creative Technologist
-                    </h1>
-                    <p class = "bio__description">
-                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                        Velit officia consequat duis enim velit mollit.
-                        Exercitation veniam consequat sunt nostrud amet.
-                    </p>
-                    <button class="bio__download">Download Resume</button>
+                    <div class="bio__info">
+                        <h1 class="bio__greeting">
+                            Hi, I am John,
+                            <br>Creative Technologist
+                        </h1>
+                        <p class = "bio__description">
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                            Velit officia consequat duis enim velit mollit.
+                            Exercitation veniam consequat sunt nostrud amet.
+                        </p>
+                        <button class="bio__download" onclick="location.href='#'" type="button">Download Resume</button>
+                    </div>
+                    
+                    <div class="bio__image">
+                        <img class="bio__portrait" src="img/images/artist.png" alt="John, Creative Technologist">
+                    </div>
                 </div>
             </div>
         </section>
@@ -50,10 +57,9 @@
             <div class="container">
                 <div class="recent-posts__container">
                     <div class="recent-posts__header">
-                        <p class="recent-posts__title">Recent posts</p>
-                        <a href="#">View all</a>
+                        <p class="recent-posts__title">Recent posts</p> 
+                        <a class="recent-posts__view-all"href="#">View all</a>
                     </div>
-                    <!-- Придумать тег View All -->
                     <ul class="recent-posts__list">
                         <li class="recent-posts__item">
                                 <a class="recent-posts__link" href="#">Making a design system from scratch</a>
@@ -79,58 +85,70 @@
         </section>
         <section class="featured-works">
             <div class="container">
-                <h2>Featured works</h2>
                 <div class="featured-works__container">
+                    <h2 class="featured-works__header">Featured works</h2>
                     <ul class="featured-works__list">
                         <li class="featured-works__item">
                             <div class="featured-works__post">
-                                <a class="featured-works__link" href="#">
-                                    <img class="featured-works-image" src="img/images/designing-dashboards.jpg" alt="Dashboards application"> 
-                                </a>
-                                <a class="featured-works__link" href="#">Designing Dashboards</a>
-                                <time class="featured-works__date" datetime="2020">
-                                    2020
-                                </time>
-                                <p class="featured-works__tag">Dashboard</p>
-                                <p class="featured-works__content">
-                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                                    Velit officia consequat duis enim velit mollit.
-                                    Exercitation veniam consequat sunt nostrud amet.
-                                </p>
+                                <div class="featured-works__image-container">
+                                    <a class="featured-works__link" href="#">
+                                        <img class="featured-works__image" src="img/images/designing-dashboards.jpg" alt="Dashboards application"> 
+                                    </a>
+                                </div>
+                                <div class="featured-works__text">
+                                    <p><a class="featured-works__link" href="#">Designing Dashboards</a></p>
+                                    <div class="featured-works__additional-info">
+                                        <time class="featured-works__date" datetime="2020"> 2020</time>
+                                        <p class="featured-works__tag">Dashboard</p>
+                                    </div>
+                                    <p class="featured-works__content">
+                                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                                        Velit officia consequat duis enim velit mollit.
+                                        Exercitation veniam consequat sunt nostrud amet.
+                                    </p>
+                                </div>
                             </div>
                         </li>
                         <li class="featured-works__item">
                             <div class="featured-works__post">
-                                <a class="featured-works__link" href="#">
-                                    <img class="featured-works-image" src="img/images/vibrant-portraits.jpg" alt="Vibrant woman portrait"> 
-                                </a>
-                                <a class="featured-works__link" href="#">Vibrant Portraits of 2020</a>
-                                <time class="featured-works__date" datetime="2018">
-                                    2018
-                                </time>
-                                <p class="featured-works__tag">Illustration</p>
-                                <p class="featured-works__content">
-                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                                    Velit officia consequat duis enim velit mollit.
-                                    Exercitation veniam consequat sunt nostrud amet.
-                                </p>
+                                <div class="featured-works__image-container">
+                                    <a class="featured-works__link" href="#">
+                                        <img class="featured-works__image" src="img/images/vibrant-portraits.jpg" alt="Vibrant woman portrait"> 
+                                    </a>
+                                </div>
+                                <div class="featured-works__text">
+                                    <p><a class="featured-works__link" href="#">Vibrant Portraits of 2020</a></p>
+                                    <div class="featured-works__additional-info">
+                                        <time class="featured-works__date" datetime="2018"> 2018</time>
+                                        <p class="featured-works__tag">Illustration</p>
+                                    </div>
+                                    <p class="featured-works__content">
+                                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                                        Velit officia consequat duis enim velit mollit.
+                                        Exercitation veniam consequat sunt nostrud amet.
+                                    </p>
+                                </div>
                             </div>
                         </li>
                         <li class="featured-works__item">
                             <div class="featured-works__post">
-                                <a class="featured-works__link" href="#">
-                                    <img class="featured-works-image" src="img/images/36-days.jpg" alt="Malayalam letter"> 
-                                </a>
-                                <a class="featured-works__link" href="#">36 Days of Malayalam type</a>
-                                <time class="featured-works__date" datetime="2018">
-                                    2018
-                                </time>
-                                <p class="featured-works__tag">Typography</p>
-                                <p class="featured-works__content">
-                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                                    Velit officia consequat duis enim velit mollit.
-                                    Exercitation veniam consequat sunt nostrud amet.
-                                </p>
+                                <div class="featured-works__image-container">
+                                    <a class="featured-works__link" href="#">
+                                        <img class="featured-works__image" src="img/images/36-days.jpg" alt="Malayalam art letter"> 
+                                    </a>
+                                </div>
+                                <div class="featured-works__text">
+                                    <p><a class="featured-works__link" href="#">36 Days of Malayalam type</a></p>
+                                    <div class="featured-works__additional-info">
+                                        <time class="featured-works__date" datetime="2018"> 2018</time>
+                                        <p class="featured-works__tag">Typography</p>
+                                    </div>
+                                    <p class="featured-works__content">
+                                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                                        Velit officia consequat duis enim velit mollit.
+                                        Exercitation veniam consequat sunt nostrud amet.
+                                    </p>
+                                </div>
                             </div>
                         </li>
                     </ul>
@@ -141,18 +159,18 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__container">
-                <ul class="social-network__list">
-                    <li class="social-network__item">
-                        <a class ="social-network__link" href="#"><img class="social-network__image" src="img/ico/fb.svg"></a>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a class ="footer__link" href="#"><img class="footer__image" src="img/ico/fb.svg"></a>
                     </li>
                     <li class="footer__item">
-                        <a class ="social-network__link" href="#"><img class="social-network__image" src="img/ico/insta.svg"></a>
+                        <a class ="footer__link" href="#"><img class="footer__image" src="img/ico/insta.svg"></a>
                     </li>
                     <li class="footer__item">
-                        <a class ="social-network__link" href="#"><img class="social-network__image" src="img/ico/twitter.svg"></a>
+                        <a class ="footer__link" href="#"><img class="footer__image" src="img/ico/twitter.svg"></a>
                     </li>
                     <li class="footer__item">
-                        <a class ="social-network__link" href="#"><img class="social-network__image" src="img/ico/linkedin.svg"></a>
+                        <a class ="footer__link" href="#"><img class="footer__image" src="img/ico/linkedin.svg"></a>
                     </li>
                 </ul>
                 <p class="footer__copyright">Copyright ©2020 All rights reserved</p>
