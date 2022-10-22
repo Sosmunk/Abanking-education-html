@@ -1,9 +1,10 @@
-@use './nav.scss';
+@use './header.scss';
 @use './bio.scss';
 @use './recent-posts.scss';
 @use './featured-works.scss';
 @use './footer.scss';
-@use './header.scss';
+@use './nav.scss';
+
 * {
     box-sizing: border-box;
 }

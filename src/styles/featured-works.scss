@@ -5,6 +5,7 @@
     }
 
     &__link{
+        display: block;
         position:relative;
         font-weight: 700;
         font-size: 30px;
@@ -33,15 +34,12 @@
         margin-top:10px;
         margin-bottom:17px;
         align-items:center;
-        gap:36px;
+        gap:26px;
     }
 
-    &__text{
+    &__content{
         position:relative;
         margin-left: 18px;
-        &:first-child{
-            margin-top:-20px;
-        }
     }
 
     &__tag{
